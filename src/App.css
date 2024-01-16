@@ -5,12 +5,22 @@
 body {
   margin: 0;
   padding: 0;
+  color: #000;
+  font-family: Poppins;
+}
+
+.App {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 /* navbar */
 
-nav > .flex-container {
+nav {
   display: flex;
+  height: 70px;
   padding: 20px 30px;
   border-bottom: 1px solid #EBEBEB;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -18,4 +28,30 @@ nav > .flex-container {
 
 .airbnb-logo {
   width: 100px;
+}
+
+/* hero */
+
+.hero {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.hero-image {
+  width: 100%;
+  align-self: center;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 110%; /* 39.6px */
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 110%; /* 17.6px */
 }

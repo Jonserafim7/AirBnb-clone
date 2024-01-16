@@ -4,9 +4,7 @@ import AirbnbLogo from '../assets/airbnb-logo.png';
 const Navbar = () => {
     return (
         <nav>
-            <div className='flex-container'>
-                <img class="airbnb-logo" src={AirbnbLogo} alt='airbnb logo'/>   
-            </div>
+            <img class="airbnb-logo" src={AirbnbLogo} alt='airbnb logo'/>   
         </nav>
     );
 };
