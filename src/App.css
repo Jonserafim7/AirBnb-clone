@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+
+nav > .flex-container {
+  display: flex;
+  padding: 20px 30px;
+  border-bottom: 1px solid #EBEBEB;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.airbnb-logo {
+  width: 100px;
+}
