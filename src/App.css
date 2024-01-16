@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  border: black solid 1px;
 }
 
 /* navbar */
@@ -54,4 +55,69 @@ nav {
   font-size: 16px;
   font-weight: 300;
   line-height: 110%; /* 17.6px */
+}
+
+/* cards */
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px 30px 30px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 110%; /* 13.2px */
+}
+
+.card p {
+  margin: 0;
+}
+
+.tag {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 2px;
+  background: #FFF;
+  padding: 4px;
+  margin-top: 0;
+}
+
+.card-image,
+.card-text {
+  width: 100%;
+}
+
+.card-text {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating .number-of-ratings,
+.rating .location {
+  color: #918E9B;
+}
+
+.star-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.bold {
+  font-weight: 600;
 }
