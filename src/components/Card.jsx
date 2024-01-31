@@ -10,13 +10,13 @@ const Card = () => {
             <img className="card-image" src={KatieZaferesPhoto} alt='Katie Zaferes'/>
             <div className='card-text'>
                 <div className='rating'>
-                    <img className='star-icon' src={StarIcon}/>
+                    <img className='star-icon' src={StarIcon} alt='start icon'/>
                     <p className='rating'>5.0</p>
                     <p className='number-of-ratings'>(6) </p>
                     <img className='ellipse-icon' src={EllipseIcon}/>
                     <p className='location'>USA</p>
                 </div>
-                <p className='description'>Life lessons with Katie Zaferes</p>
+                <h2 className='description'>Life lessons with Katie Zaferes</h2>
                 <p><span className='bold'>From $136</span> / person</p>
             </div>
         </div>
