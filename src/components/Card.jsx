@@ -1,23 +1,31 @@
 import React from 'react';
-import KatieZaferesPhoto from '../assets/image12.png';
-import StarIcon from '../assets/Star.png';
-import EllipseIcon from '../assets/Ellipse6.png';
 
-const Card = () => {
+import StarIcon from '/public/assets/Star.png';
+import EllipseIcon from '/public/assets/Ellipse6.png';
+
+
+const Card = (props) => {  
+    let badgeText
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
+    
     return (
         <div className="card">
-            <p className='tag'>SOLD OUT</p>
-            <img className="card-image" src={KatieZaferesPhoto} alt='Katie Zaferes'/>
+            {badgeText && <div className='tag'>{badgeText}</div>}
+            <img className="card-image" src={`/public/assets/${props.coverImg}`} alt='Katie Zaferes'/>
             <div className='card-text'>
                 <div className='rating'>
                     <img className='star-icon' src={StarIcon} alt='start icon'/>
-                    <p className='rating'>5.0</p>
-                    <p className='number-of-ratings'>(6) </p>
+                    <p className='rating'>{props.stats.rating}</p>
+                    <p className='number-of-ratings'>({props.stats.reviewCount})</p>
                     <img className='ellipse-icon' src={EllipseIcon}/>
-                    <p className='location'>USA</p>
+                    <p className='location'>{props.location}</p>
                 </div>
-                <h2 className='description'>Life lessons with Katie Zaferes</h2>
-                <p><span className='bold'>From $136</span> / person</p>
+                <h2 className='description'>{props.title}</h2>
+                <p><span className='bold'>From ${props.price}</span> / person</p>
             </div>
         </div>
     );

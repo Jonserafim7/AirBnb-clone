@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImageGrid from '../assets/photo-grid.png';
+import HeroImageGrid from '/public/assets/photo-grid.png';
 
 const Hero = () => {
     return (
