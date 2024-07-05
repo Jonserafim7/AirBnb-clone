@@ -19,7 +19,7 @@ Airbnb Clone is a React-based web application that replicates the look and feel 
 
 ## Live Demo
 
-Check out the live demo of the application here: [Airbnb Clone - Live Demo](URL of the live demo). Explore the various online experiences available.
+Check out the live demo of the application here: [Airbnb Clone - Live Demo]([URL of the live demo](https://airbnb-jonas.netlify.app/)). Explore the various online experiences available.
 
 ## Usage
 
